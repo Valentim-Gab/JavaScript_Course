@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            background: rgb(12, 141, 12);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
+        Interaja...
+    </div>
+    -->
+
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', saiu)
+        a.addEventListener('mousedown', segurou)
+        a.addEventListener('mouseup', soltou)
+
+        function clicar() {
+            a.innerHTML = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerHTML = 'Entrou!'
+        }
+
+        function saiu() {
+            a.innerHTML = 'Saiu!'
+            a.style.background = 'green'
+        }
+
+        function segurou() {
+            a.innerHTML = 'Segurou!'
+            a.style.background = 'blue'
+        }
+
+        function soltou() { //É sobrescrito pelo evento CLICK
+            a.innerHTML = 'Soltou!'
+            a.style.background = 'yellow'
+        }
+    </script>
+</body>
+</html>
