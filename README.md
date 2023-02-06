@@ -1,5 +1,5 @@
 # JavaScript Curse
-JavaScript Curse of CursoEmVideo
+CursoEmVideo JavaScript course
 
 ```bash
 
