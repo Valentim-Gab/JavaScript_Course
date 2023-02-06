@@ -1,4 +1,4 @@
-# JavaScript Curse
+# JavaScript Course
 CursoEmVideo JavaScript course
 
 ```bash
