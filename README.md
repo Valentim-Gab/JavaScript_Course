@@ -2,7 +2,6 @@
 CursoEmVideo JavaScript course
 
 ```bash
-
 Using {
   JavaScript;
   HTML;
